@@ -1,0 +1,215 @@
+*{
+    margin:0;
+}
+header {
+    position: sticky;
+    top: 0;
+    height: 120px;
+    background-color: #4E5283;
+    transition: all .5s ease-in-out;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.lista--menu {
+    display: flex;
+    justify-self: center;
+    list-style: none;
+    height: 100%;
+}
+
+.boton__menu {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+    color: #D9BBF9;
+}
+.boton__menu-cerrar{
+    position: absolute;
+    display: none;
+    right: 30px;
+    top: 30px;
+    color: #D9BBF9;
+}
+
+.lista__item {
+    height: 100%;
+}
+
+.lista__item>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80px;
+    height: 100%;
+    background-color: #4E5283;
+    transform: skew(-10deg);
+    text-decoration: none;
+    color: #d9bbf9;
+    font-size: 1em;
+    font-family: 'Bebas Neue', monospace;
+    letter-spacing: 1.2px;
+    transition: all .5s ease-out;
+}
+
+.lista__item>a:hover {
+    background-color: #7871AA;
+    letter-spacing: 1.8px;
+    transition: all .5s ease-out;
+}
+
+.lista__item__logo {
+    background-color: #AA9FB1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 130px;
+    transform: skew(-10deg);
+}
+.lista__item__logo>a{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.lista__item__logo>a>img {
+    padding: 5px;
+    height: 100%;
+    animation-name: rubberBand;
+    animation-play-state: paused;
+}
+
+.lista__item__logo__p {
+    color: #4E5283;
+    font-family: 'Bebas Neue', monospace;
+    font-size: 1em;
+    animation-name: rubberBand;
+    animation-play-state: paused
+}
+
+.lista__item__logo:hover img,
+.lista__item__logo:hover p {
+    transform: skew(10deg);
+    animation-timing-function: ease-out;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.logo__movil {
+    display: none;
+}
+
+.header-scrolled{
+    height: 90px;
+}
+
+
+@media (max-width: 767px) {
+    header {
+        height: 80px;
+    }
+    .header-scrolled{
+        height: 60px;
+    }
+
+    .boton__menu {
+        display: inline-flex;
+        background-color: transparent;
+        border: none;
+        right: 20px
+    }
+    .boton__menu-cerrar{
+        display: inline-flex;
+        right: 20px;
+        background-color: transparent;
+        color: #D9BBF9;
+        border: none;
+    }
+    .boton_menu-cerrar:hover{
+        background-color: #4E5283;
+    }
+
+    .lista__item__logo {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    .lista--menu {
+        position: fixed;
+        width: 50%;
+        transform: translateX(50vw);
+        background-color: #0d0d0d;
+        flex-direction: column;
+        opacity: .8;
+        transition: all .6s ease-in-out;
+    }
+
+    .lista__item {
+        position: relative;
+        top: 80px;
+        height: auto;
+        transform: skew(10deg);
+    }
+
+    /* clase para el script del menu */
+    .mostrar-menu{
+        transform: translateX(0vw);
+    }
+    .ocultar-boton{
+        visibility: hidden;
+    }
+
+    .lista__item>a {
+        background-color: #0d0d0d;
+        width: 100%;
+        height: 80px;
+    }
+
+    .logo__movil {
+        transform: skew(-10deg);
+        position: absolute;
+        left: 5px;
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+    }
+    .logo__movil a{
+        height: 100%;
+    }
+    .logo__movil img {
+        height: 100%;
+    }
+    .logo__movil__span{
+        display: inline-flex;
+        flex-direction: column;
+        color: #D9BBF9;
+        font-family: 'Bebas Neue', monospace;
+    }
+    .logo__movil__span--nombre{
+        margin: 2px;
+        font-size: 1.5em;
+        letter-spacing: .1em;
+    }
+    .logo__movil__span--slogan{
+        margin: 2px;
+       font-size: .7em;
+       letter-spacing: .1em;
+
+    }
+
+
+}
