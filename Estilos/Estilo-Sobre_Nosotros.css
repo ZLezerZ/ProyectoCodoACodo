@@ -50,7 +50,8 @@
 
 .encabezado > div > img{
     position: absolute;
-    width: 100%; 
+    right: 0;
+    width: 80%; 
     height: 100%;
     object-fit: cover; /* Escalar la imagen para cubrir el contenedor */
 }
@@ -114,7 +115,7 @@ details, .contenedor__historia{
 .historia--p p:nth-child(3){
     padding-bottom: 30px;
 }
-.historia--img{
+/* .historia--img{
     max-height: 80%;
     position: absolute;
     display: inline-flex;
@@ -122,4 +123,4 @@ details, .contenedor__historia{
 }
 .historia--img > img{
     max-width: 100vw;
-}
+} */
