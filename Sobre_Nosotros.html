@@ -11,30 +11,112 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="Estilos/Estilo-Sobre_Nosotros.css">
     <link rel="icon" type="icon" href="Imagenes/favicomatic/favicon-32x32.png">
     <title>El Sauce Boxeador</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
-            <div class="logo__movil"><a href="index.html"><img src="Imagenes/Imagen12.png"alt="Logo de Empresa"></a><p>El Sauce Boxeador</p><p>un gancho de calidad en cada mueble</p></div>
-            <ul class="lista--menu">
+            <div class="logo__movil">
+                <a href="index.html"><img src="Imagenes/Imagen12.png" alt="Logo de Empresa"></a>
+                <div class="logo__movil__span">
+                    <span class="logo__movil__span--nombre">
+                        <p>El Sauce Boxeador</p>
+                    </span>
+                    <span class="logo__movil__span--slogan">
+                        <p>un gancho de calidad en cada mueble</p>
+                    </span>
+                </div>
+            </div>
+            <ul class="lista--menu" id="lista--menu">
                 <li class="lista__item"><a href="index.html">Inicio</a></li>
                 <li class="lista__item"><a href="Sobre_Nosotros.html">Sobre Nosotros</a></li>
-                <li class="lista__item__logo"><a href="index.html"><img class="animate__animated" src="Imagenes/Imagen13.png"alt="Logo de Empresa"></a> <p class="lista__item__logo__p animate__animated">El Sauce Boxeador</p></li>
+                <li class="lista__item__logo"><a href="index.html"><img class="animate__animated"
+                            src="Imagenes/Imagen13.png" alt="Logo de Empresa"></a>
+                    <p class="lista__item__logo__p animate__animated">El Sauce Boxeador</p>
+                </li>
                 <li class="lista__item"><a href="Trabajos.html">Trabajos</a></li>
                 <li class="lista__item"><a href="Contacto.html">Contacto</a></li>
+                <button class="boton__menu-cerrar" id="cerrar">
+                    <i class="material-symbols-outlined">close</i>
+                </button>
             </ul>
-            <span class="boton__menu">
+            <button class="boton__menu" id="abrir">
                 <i class="material-symbols-outlined">Menu</i>
-            </span>
+            </button>
         </nav>
-
     </header>
-    <h2>Esta es la página de Sobre nosotros</h2>
+    <section class="encabezado">
+        <div class="contenedor--p">
+            <div>
+            <h1>Sobre Nosotros</h1>
+            <p>Conocé la historia detrás de nuestra marca, quienes integran el equipo, cómo operamos y porqué somos líderes en el mercado del diseño a medida.</p>
+            </div>
+        </div>
+        <div class="encabezado__div--img">
+            <img src="Imagenes/SobreNosotros/taller2.jpg" alt="nuestro Taller">
+        </div>
+    </section>
+
+    <section class="menu">
+    <details>
+        
+        <summary>
+            <span class="material-symbols-outlined">self_improvement</span>
+            Nuestra Historia
+            </summary>
+    <div class="contenedor__historia">
+        <div class="historia--p">
+            <p>
+                El Sauce Boxeador nace de la mano de una necesidad, en plena post-cuarentena y con una crisis económica y laboral. Cuatro amigos con profesiones disímiles nos encontramos a tomar mate al rededor de un pequeño fogon bajo un viejo sauce. En poco tiempo, descubrimos que nuestras habilidades eran complementarias y todos teníamos una motivación en común: emprender un proyecto personal que nos apasionara y nos alejara de la rutina.
+            </p>
+            <p>       
+                 Así fue como este sueño, una carpintería artesanal que fusiona tradicionales técnicas de carpintería con la máxima innovación en diseño y expresión en las redes, se concretó a base de esfuerzo, dedicación y la voluntad de quienes la conforman. Un símbolo que nos recuerda que, pese a los golpes que podamos recibir en un contexto adverso e inesperado, siempre hay que levantarse y continuar la pelea. Tomamos como símbolos aquél viejo sauce que nos covijaba de los embates del viento y la realidad que atravesaba cada uno de nosotros en aquél momento, de allí surgió El Sauce Boxeador. 
+            </p>
+            <p>
+                Juntos, hemos creado una carpintería que no solo fabrica muebles de alta calidad, sino que también se preocupa por el bienestar de nuestros clientes y el medio ambiente. Cada pieza es diseñada y fabricada con la máxima atención al detalle y con materiales sostenibles y de alta calidad.  
+                Estamos orgullosos de haber convertido una situación difícil en una oportunidad para crear algo nuevo y significativo. Cada día, nos levantamos con la motivación de seguir mejorando y creciendo juntos. Sabemos que el camino no es fácil, pero lo abrazamos con valentía y optimismo, porque creemos en lo que hacemos y en la calidad de nuestros productos y servicios.
+                En El Sauce Boxeador no solo creamos muebles, sino también sueños y esperanzas, y esperamos que nuestros clientes sientan esa misma pasión y dedicación en cada pieza que sale de nuestro taller. 
+            </p>
+        </div>
+        <div class="historia--img">
+            <img src="Imagenes/SobreNosotros/prueba.png" alt="imagen de taller">
+        </div>
+    </div>
+    </details>
+
+    <details>
+        <summary>
+            <span class="material-symbols-outlined">badge</span>
+            Nuestro Staff
+        </summary>   
+        Contamos con una diseñadora que aporta su creatividad y visión estética a cada proyecto, un mecánico dental con una excelente habilidad manual que se encarga de la fabricación y ensamblado de cada pieza, una especialista en gestión comercial y community manager que se encarga de dar a conocer nuestros productos y servicios, y un psicólogo organizacional que se encarga de mantener un ambiente de trabajo saludable y armonioso, además de ayudar en el transporte y ensamble de los muebles. 
+    </details>
+
+    <details>
+        <summary>
+            <span class="material-symbols-outlined">
+                construction
+                </span>
+            Cómo Trabajamos</summary>
+    </details>
+
+    <details>
+        <summary>
+            <span class="material-symbols-outlined">
+                live_help
+                </span>
+            ¿Porqué elegirnos?</summary>
+    </details>
+</section>
+
+<script src="JavaScript/Nav.js"></script>
 </body>
 
 </html>

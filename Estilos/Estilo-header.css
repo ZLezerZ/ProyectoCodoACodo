@@ -2,6 +2,8 @@
     margin:0;
 }
 header {
+    position: relative;
+    z-index: 1000;
     position: sticky;
     top: 0;
     height: 120px;
@@ -200,15 +202,14 @@ nav {
         font-family: 'Bebas Neue', monospace;
     }
     .logo__movil__span--nombre{
-        margin: 2px;
+        margin-left: 10px;
         font-size: 1.5em;
         letter-spacing: .1em;
     }
     .logo__movil__span--slogan{
-        margin: 2px;
-       font-size: .7em;
-       letter-spacing: .1em;
-
+        margin-left: 10px;
+        font-size: .7em;
+        letter-spacing: .1em;
     }
 
 
