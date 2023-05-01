@@ -43,7 +43,9 @@
 
 .encabezado__div--img{
     position: relative;
+    right: 0;
     display: flex;
+    align-items: center;
     width: 50vw;
     height: 100%; /* Altura del contenedor */
     overflow: hidden; /* Ocultar partes de la imagen que sobrepasan el contenedor */
@@ -53,8 +55,10 @@
     position: absolute;
     right: 0;
     width: 80%; 
-    height: 100%;
-    object-fit: cover; /* Escalar la imagen para cubrir el contenedor */
+    height: 110%;
+    object-fit: fill;
+    min-width: 600px;
+    max-width: 600px;
 }
 .menu{
     position: relative;
