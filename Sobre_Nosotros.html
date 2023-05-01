@@ -11,30 +11,159 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="Estilos/Estilo-Sobre_Nosotros.css">
     <link rel="icon" type="icon" href="Imagenes/favicomatic/favicon-32x32.png">
     <title>El Sauce Boxeador</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
-            <div class="logo__movil"><a href="index.html"><img src="Imagenes/Imagen12.png"alt="Logo de Empresa"></a><p>El Sauce Boxeador</p><p>un gancho de calidad en cada mueble</p></div>
-            <ul class="lista--menu">
+            <div class="logo__movil">
+                <a href="index.html"><img src="Imagenes/Imagen12.png" alt="Logo de Empresa"></a>
+                <div class="logo__movil__span">
+                    <span class="logo__movil__span--nombre">
+                        <p>El Sauce Boxeador</p>
+                    </span>
+                    <span class="logo__movil__span--slogan">
+                        <p>un gancho de calidad en cada mueble</p>
+                    </span>
+                </div>
+            </div>
+            <ul class="lista--menu" id="lista--menu">
                 <li class="lista__item"><a href="index.html">Inicio</a></li>
                 <li class="lista__item"><a href="Sobre_Nosotros.html">Sobre Nosotros</a></li>
-                <li class="lista__item__logo"><a href="index.html"><img class="animate__animated" src="Imagenes/Imagen13.png"alt="Logo de Empresa"></a> <p class="lista__item__logo__p animate__animated">El Sauce Boxeador</p></li>
+                <li class="lista__item__logo"><a href="index.html"><img class="animate__animated"
+                            src="Imagenes/Imagen13.png" alt="Logo de Empresa"></a>
+                    <p class="lista__item__logo__p animate__animated">El Sauce Boxeador</p>
+                </li>
                 <li class="lista__item"><a href="Trabajos.html">Trabajos</a></li>
                 <li class="lista__item"><a href="Contacto.html">Contacto</a></li>
+                <button class="boton__menu-cerrar" id="cerrar">
+                    <i class="material-symbols-outlined">close</i>
+                </button>
             </ul>
-            <span class="boton__menu">
+            <button class="boton__menu" id="abrir">
                 <i class="material-symbols-outlined">Menu</i>
-            </span>
+            </button>
         </nav>
-
     </header>
-    <h2>Esta es la página de Sobre nosotros</h2>
+    <section class="encabezado">
+        <div class="contenedor--p">
+            <div>
+            <h1>Sobre Nosotros</h1>
+            <p>Conocé la historia detrás de nuestra marca, quienes integran el equipo, cómo operamos y porqué somos líderes en el mercado del diseño a medida.</p>
+            </div>
+        </div>
+        <div class="encabezado__div--img">
+            <img src="Imagenes/SobreNosotros/Sauce-fuego.png" alt="foto de portada - reunión bajo el sauce">
+        </div>
+    </section>
+
+    <section class="menu">
+    <details>
+        <summary>
+            <span class="material-symbols-outlined">self_improvement</span>
+            Nuestra Historia
+            </summary>
+    <div class="contenedor__historia">
+        <div class="historia--p">
+            <p>
+                El Sauce Boxeador nace de la mano de una necesidad, en plena post-cuarentena y con una crisis económica y laboral. Cuatro amigos con profesiones disímiles nos encontramos a tomar mate al rededor de un pequeño fogon bajo un viejo sauce. En poco tiempo, descubrimos que nuestras habilidades eran complementarias y todos teníamos una motivación en común: emprender un proyecto personal que nos apasionara y nos alejara de la rutina.
+            </p>
+            <p>       
+                 Así fue como este sueño, una carpintería artesanal que fusiona tradicionales técnicas de carpintería con la máxima innovación en diseño y expresión en las redes, se concretó a base de esfuerzo, dedicación y la voluntad de quienes la conforman. Un símbolo que nos recuerda que, pese a los golpes que podamos recibir en un contexto adverso e inesperado, siempre hay que levantarse y continuar la pelea. Tomamos como símbolos aquél viejo sauce que nos covijaba de los embates del viento y la realidad que atravesaba cada uno de nosotros en aquél momento, de allí surgió El Sauce Boxeador. 
+            </p>
+            <p>
+                Juntos, hemos creado una carpintería que no solo fabrica muebles de alta calidad, sino que también se preocupa por el bienestar de nuestros clientes y el medio ambiente. Cada pieza es diseñada y fabricada con la máxima atención al detalle y con materiales sostenibles y de alta calidad.  
+                Estamos orgullosos de haber convertido una situación difícil en una oportunidad para crear algo nuevo y significativo. Cada día, nos levantamos con la motivación de seguir mejorando y creciendo juntos. Sabemos que el camino no es fácil, pero lo abrazamos con valentía y optimismo, porque creemos en lo que hacemos y en la calidad de nuestros productos y servicios.
+                En El Sauce Boxeador no solo creamos muebles, sino también sueños y esperanzas, y esperamos que nuestros clientes sientan esa misma pasión y dedicación en cada pieza que sale de nuestro taller. 
+            </p>
+        </div>
+        <!-- <div class="historia--img">
+            <img src="Imagenes/SobreNosotros/prueba.png" alt="imagen de taller">
+        </div> -->
+    </div>
+    </details>
+
+    <details>
+        <summary>
+            <span class="material-symbols-outlined">badge</span>
+            Nuestro Staff
+        </summary>
+        <div class="contenedor__tarjeta">
+        <div class="card">
+            <div class="face front">
+                <img src="Imagenes/SobreNosotros/persona1.jpeg" alt="imagen de patricio">
+                <h3>Patricio</h3>
+            </div>
+            <div class="face back">
+                <h3>Patricio</h3>
+                <p>Soy técnico protesista dental con más de 15 años de experiencia en el rubro y también carpintero. Además, soy uno de los fundadores de El Sauce Boxeador.</p>
+                <p>Con 35 años, mi experiencia en trabajo manual fino y mi especial atención al detalle, me convierten en el encargado de llevar a la práctica todos los diseños que nos presenta Lourdes.</p>
+                <p>Desde el sur del país, vengo a aportar mi experiencia y pasión al equipo. ¡Listo para enfrentar cualquier desafío!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="Imagenes/SobreNosotros/persona2.jpeg" alt="imagen de Lourdes">
+                <h3>Lourdes</h3>
+            </div>
+            <div class="face back">
+                <h3>Lourdes</h3>
+                <p>Hola, soy Lourdes, una diseñadora gráfica de 27 años nacida en Buenos Aires y soy co-fundadora de El Sauce Boxeador.</p>
+                <p>Con más de 5 años de experiencia en diseño gráfico, me encargo de crear diseños únicos y personalizados para nuestros clientes. Siempre busco la perfección y la máxima calidad en cada proyecto. </p>
+                <p>¡¡Me apasiona crear y estoy orgullosa de ser parte de este proyecto y de la calidad de nuestros productos!!</p>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="Imagenes/SobreNosotros/persona3.jpeg" alt="imagen de alejandra">
+                <h3>Alejandra</h3>
+            </div>
+            <div class="face back">
+                <h3>Alejandra</h3>
+                <p>¡Hola! Soy Alejandra, tengo 31 años y viví siempre en Capital Federal. Tengo una Licenciatura en Administración de Empresas, un postgrado en finanzas y varios cursos en gestión de imagen.</p>
+                <p>Actualmente me encargo de todo el sector de contabilidad y de gestionar las redes del emprendimiento. ¡El community managment es mi segunda pasión!</p>
+                <p>Como parte de El Sauce Boxeador, estoy entusiasmada de aplicar mis habilidades y conocimientos para el éxito del negocio.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="Imagenes/SobreNosotros/persona4.png" alt="imagen de leonardo">
+                <h3>Leonardo</h3>
+            </div>
+            <div class="face back">
+                <h3>Leonardo</h3>
+                <p>Hola, soy Lic. en Psicología, tengo 27 años y vivo en Capital. Me recibí en la UBA y realicé una especialización en psicología del trabajo en la misma casa de estudios.</p>
+                <p>Mi trabajo consiste en promover la salud mental en el equipo, mantener un buen clima laboral, fomentar los espacios de comunicación y evitar el distres por sobrecarga de tareas. </p>
+                <p>¡Coordinar un equipo de profesionales tan diversos es todo un desafío y a la vez muy enriquecedor! </p>
+            </div>
+        </div>
+        </div>
+    </details>
+
+    <details>
+        <summary>
+            <span class="material-symbols-outlined">construction</span>
+            Cómo Trabajamos</summary>
+    </details>
+
+    <details>
+        <summary>
+            <span class="material-symbols-outlined">
+                live_help
+                </span>
+            ¿Porqué elegirnos?</summary>
+    </details>
+</section>
+
+<script src="JavaScript/Nav.js"></script>
 </body>
 
 </html>
