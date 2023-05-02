@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: 0;
 }
-
 .encabezado{
     margin: 0;
     display:flex;
@@ -104,23 +103,21 @@ details, .contenedor__historia{
 .contenedor__historia{
     width: 60vw;
 }
-.historia--p{
+.historia--p , .contenedor__pasos-de-trabajo{
     margin: 0px 10px 0px;
     border-radius: 0px 0px 20px 20px;
     background-image: linear-gradient(135deg, rgba(186, 164, 223, 0.3), rgba(255, 212, 207, 0.3));
-    width: 100%;
 }
-.historia--p > p{
+.historia--p > p , .contenedor__pasos-de-trabajo p{
     text-align: justify;
     padding: 30px 30px 0px;
     font-family:'Noto Sans', sans-serif;
     font-size: 1em;
     line-height: 2em;
 }
-.historia--p p:nth-child(3){
+.historia--p p:nth-child(3) , .contenedor__pasos-de-trabajo p:nth-child(7){
     padding-bottom: 30px;
 }
-
 .contenedor__tarjeta{
     position: relative;
     display: flex;
@@ -203,4 +200,8 @@ details, .contenedor__historia{
 }
 .card:hover .back{
     transform: perspective(600px)rotateY(0deg);
+}
+
+.contenedor__pasos-de-trabajo p:nth-child(1){
+    font-weight: 700;
 }
