@@ -88,6 +88,7 @@ nav {
     height: 100%;
     animation-name: rubberBand;
     animation-play-state: paused;
+    filter: drop-shadow(3px 3px 1px #D9BBF9);
 }
 
 .lista__item__logo__p {
@@ -195,6 +196,7 @@ nav {
     }
     .logo__movil img {
         height: 100%;
+        filter: drop-shadow(2px 1px 1px #D9BBF9);
     }
     .logo__movil__span{
         display: inline-flex;
