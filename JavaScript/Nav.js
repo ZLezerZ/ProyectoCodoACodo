@@ -17,3 +17,15 @@ window.addEventListener("scroll", function () {
     if(this.window.scrollY == 0)
     header.classList.remove("header-scrolled");
 });
+
+// Obtener todas las tarjetas
+var cards = document.querySelectorAll('.card');
+
+// Iterar sobre cada tarjeta
+cards.forEach(function(card) {
+  // Agregar un evento de clic a cada tarjeta
+  card.addEventListener('click', function() {
+    // Alternar la clase "clicked" en la tarjeta
+    card.classList.toggle('clicked');
+  });
+});
