@@ -91,7 +91,7 @@ summary:hover{
 summary span{
     padding: 0px 5px 0px 0px;
 }
-details, .contenedor__historia{
+details{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,33 +100,29 @@ details, .contenedor__historia{
     max-width: 1500px;
 }
 
-.contenedor__historia{
-    width: 60vw;
-}
-.historia--p , .contenedor__pasos-de-trabajo{
+.contenedor__historia,.contenedor__tarjeta, .contenedor__pasos-de-trabajo, .contenedor__porque-elegirnos{
     margin: 0px 10px 0px;
     border-radius: 0px 0px 20px 20px;
     background-image: linear-gradient(135deg, rgba(186, 164, 223, 0.3), rgba(255, 212, 207, 0.3));
 }
-.historia--p > p , .contenedor__pasos-de-trabajo p{
+.contenedor__historia p , .contenedor__pasos-de-trabajo p , .contenedor__porque-elegirnos p{
     text-align: justify;
     padding: 30px 30px 0px;
     font-family:'Noto Sans', sans-serif;
     font-size: 1em;
     line-height: 2em;
 }
-.historia--p p:nth-child(3) , .contenedor__pasos-de-trabajo p:nth-child(7){
+.contenedor__historia p:nth-child(3) , .contenedor__pasos-de-trabajo p:nth-child(7), .contenedor__porque-elegirnos p:nth-child(7){
     padding-bottom: 30px;
 }
+
+/*De aquí hasta el próximo commentario es la sección nuestro staff*/
 .contenedor__tarjeta{
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(135deg, rgba(186, 164, 223, 0.3), rgba(255, 212, 207, 0.3));
-    border-radius: 0px 0px 20px 20px;
-    margin: 0px 10px 0px;
 }
 .card{
     position: relative;
@@ -201,7 +197,6 @@ details, .contenedor__historia{
 .card:hover .back{
     transform: perspective(600px)rotateY(0deg);
 }
+/*Aquí termina el estilo de Nuestro-Staff*/
 
-.contenedor__pasos-de-trabajo p:nth-child(1){
-    font-weight: 700;
-}
+
