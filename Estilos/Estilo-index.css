@@ -1,16 +1,11 @@
 /* Paleta de Colores  #688EA6 #EBF0F2 #6A732C #403E3B #0D0D0D */
 
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
-#header {
-    position: fixed;  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 #Seccion1 {
     padding-top: 73px;
   }
@@ -28,13 +23,6 @@ nav {
 }
 
 
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  vertical-align: baseline;
-}
 
 img {
   max-width: 100%;
@@ -99,29 +87,9 @@ form, input, textarea, select, button {
   display: block;
 }
 
-body {
-  font-family: var(--tipo-principal);
-  font-size: 100%;
-  line-height: 1.4em;
-  min-height: 10vh;
-  background-color: var(--blanco);
-  color: var(--negro);
-  -webkit-hyphens: auto;
-          hyphens: auto;
-  font-smooth: always;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
 
 .carrousel {
-  width: 90%;
-  max-width: 110em;
-  height: 60em;
-  padding: 0em;
+  width: 50%;
   color: var(--negro);
   transition: all 0.4s ease;
   border-radius: 1em;
@@ -141,7 +109,6 @@ body {
   border-radius: 1em;
   background-color: var(--blanco);
   /*box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;*/
-  padding: 0em;
   transition: all 0.5s ease;
   transform: translateX(0%);
 }
