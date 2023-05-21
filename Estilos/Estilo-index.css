@@ -5,111 +5,122 @@
   box-sizing: border-box;
 }
 
-:root {
-  --negro: #393939;
-  --blanco: #ececec;
-  --sombra-ppal: #c9c9c9;
-  --sombra-sec: #ffffff;
-  --borde-negro: #00000050;
-  --marcado: rgb(127, 195, 255);
-  /* Tipografía */
-   --font-family:'Noto Sans', sans-serif;;
-}
-.carrusel--img {
-  max-width: 100%;
-  width: 100%;
-  height: 20%;
-  display: block;
-  object-fit: cover;
-  object-position: center center;
-}
-
-video {
-  max-width: 100%;
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center center;
-}
-
-li {
-  list-style-type: none;
-}
-
-::selection {
-  background-color: var(--negro);
-  color: var(--blanco);
-}
-
-form, input, textarea, select, button {
-  font-family: inherit;
-  font-size: inherit;
-  -webkit-hyphens: auto;
-          hyphens: auto;
-  background-color: transparent;
-  display: block;
-}
-
 .carrousel {
-  width: 90%;
-  max-width: 110em;
-  margin: 20px;
-  color: var(--negro);
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   transition: all 0.4s ease;
-  border-radius: 1em;
-  background-color: var(--blanco);
-  /*box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;*/
   overflow: hidden;
 }
 
-
-.carrousel .grande {
+.grande{  
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2.5%;
   width: 400%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--negro);
-  transition: all 0.4s ease;
-  border-radius: 1em;
-  background-color: var(--blanco);
-  /*box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;*/
+  height: 85%;
   transition: all 0.5s ease;
   transform: translateX(0%);
-}
-
-.carrousel .img {
-  width: calc( 100% / 4 - 0em);
-  min-height: 10vh;
-  max-height: 70%;
-  color: var(--negro);
-  transition: all 0.4s ease;
-  border-radius: 1em;
-  background-color: var(--blanco);
-  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-}
-
-.carrousel .puntos {
   display: flex;
-  position: relative;
-  bottom: 100px;
-  width: 100%;
   flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.carrusel--img {
+  margin-right: 2.5%;
+  width: calc(90% / 4);
+  height: 100%;
+  border-radius: 1%;
+  box-shadow: 0 5px 20px 1px rgba(0 0 0/ 60%);
+}
+
+.puntos{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 2.5%;
+  width: 90%;
+  height: 6%;
+  background-color: white;
+  display: flex;
+  flex-flow: nowrap;
   justify-content: center;
   align-items: center;
 }
 
-.carrousel .punto {
-  width: 1.5em;
-  height: 1.5em;
-  margin: 1em 1em 0;
-  color: var(--negro);
+.punto {
+  width: 10px;
+  height: 10px;
+  padding: 1%;
+  margin: 1%;
+  color: transparent;
+  background-color: #d2bea98c;
   transition: all 0.4s ease;
-  border-radius: 1em;
-  background-color: var(--blanco);
-  box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 100%;
+  box-shadow: 0 5px 20px 1px rgba(0 0 0/ 60%);
 }
 
-.carrousel .punto.activo {
-  background-color: lightblue;
+.punto.activo {
+  background-color: #9e5a1246;
 }
+
+h3{
+  color: #4E5283;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.contenedor__opiniones{
+  position: relative;
+  margin:2% 5%;
+  width:auto;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.op{
+  height: auto;
+  width: 45%;
+  margin: 2.5%;
+  padding: 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px 1px rgba(0 0 0/ 40%);
+  color: #4e5283af;
+}
+
+p{
+  text-align: center;
+}
+
+i{
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 767px){
+  .carrousel {
+    height: 300px;
+  }
+} 
+
+@media screen and (max-width: 375px){
+  .carrousel {
+    height: 200px;
+    padding-bottom: 5%;
+  }
+  h3{
+    margin-top: 0%;
+  }
+
+
+  .op{
+    height: auto;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  }
