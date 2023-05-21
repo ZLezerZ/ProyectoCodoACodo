@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos/Estilo-header.css">
-    <link rel="stylesheet" href="Estilos/Estilo-seccion.css">
-    <link rel="stylesheet" href="../Carpintería - El Sauce Boxeador/Estilos/Normalize.css">
-    <link rel="stylesheet" href="Estilos/EstiloTrabajos.css">
+    <link rel="stylesheet" href="Estilos\Estilo-header.css">
+    <link rel="stylesheet" href="Estilos/Footer.css">
+    <link rel="stylesheet" href="EstiloTrabajos.css">
+    <link rel="stylesheet" href="Estilos\Normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -19,32 +19,43 @@
 </head>
 
 <body>
-    <header> 
+    <header class="header" id="header">
         <nav>
-            <div class="logo__movil"><a href="index.html"><img src="Imagenes/Imagen12.png"alt="Logo de Empresa"></a><p>El Sauce Boxeador</p><p>un gancho de calidad en cada mueble</p></div>
-            <ul class="lista--menu">
+            <div class="logo__movil">
+                <a href="index.html"><img src="Imágenes\Imagen12.png" alt="Logo de Empresa"></a>
+                <div class="logo__movil__span">
+                    <span class="logo__movil__span--nombre">
+                        <p>El Sauce Boxeador</p>
+                    </span>
+                    <span class="logo__movil__span--slogan">
+                        <p>un gancho de calidad en cada mueble</p>
+                    </span>
+                </div>
+            </div>
+            <ul class="lista--menu" id="lista--menu">
                 <li class="lista__item"><a href="index.html">Inicio</a></li>
                 <li class="lista__item"><a href="Sobre_Nosotros.html">Sobre Nosotros</a></li>
-                <li class="lista__item__logo"><a href="index.html"><img class="animate__animated" src="Imagenes/Imagen13.png"alt="Logo de Empresa"></a> <p class="lista__item__logo__p animate__animated">El Sauce Boxeador</p></li>
+                <li class="lista__item__logo"><a href="index.html"><img class="animate__animated" src="Imágenes\Imagen13.png" alt="Logo de Empresa"></a>
+                    <p class="lista__item__logo__p animate__animated">El Sauce Boxeador</p>
+                </li>
                 <li class="lista__item"><a href="Trabajos.html">Trabajos</a></li>
                 <li class="lista__item"><a href="Contacto.html">Contacto</a></li>
+                <button class="boton__menu-cerrar" id="cerrar">
+                    <i class="material-symbols-outlined">close</i>
+                </button>
             </ul>
-            <span class="boton__menu">
+            <button class="boton__menu" id="abrir">
                 <i class="material-symbols-outlined">Menu</i>
-            </span>
+            </button>
         </nav>
-   </header>    <!-- inicio  -->
-     
-   <section class="encabezado">
-        <div class="contenedor--p">
-            <div>
+    </header>    
+    <!-- inicio  -->
+     <div class="contenido__pagina">
+        <section class="encabezado">
                 <h1>Nuestros Trabajos</h1>
                 <p>Te presentamos algunos de nuestros trabajos</p>
-            </div>
-        </div>
         </section>      <!-- inicio menu y opciones -->
-
-
+    
        <section class="menu">
 
              <details>
@@ -103,7 +114,7 @@
                  </div>
                </details>    
         </section>            <!--fin -->
- 
+    </div>
 
      <footer>
         <div class="footer__redes">
@@ -124,7 +135,7 @@
         </div>
         <div class="footer__logo">
             <span>
-                <a href="index.html"><img src="Imagenes/Imagen13.png" alt="logo de empresa"></a>
+                <a href="index.html"><img src="Imágenes\Imagen13.png" alt="logo de empresa"></a>
                 <p>El Sauce Boxeador</p>
             </span>
                 
@@ -141,6 +152,6 @@
         </div>
      </footer>
 
-         <script src="JavaScript/Nav.js"></script> 
+         <script src="JavaScript\Nav.js"></script> 
  </body>
 </html>
