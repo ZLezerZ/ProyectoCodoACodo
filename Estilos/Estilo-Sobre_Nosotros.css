@@ -278,7 +278,7 @@ details {
     }
 }
 
-@media(max-width: 1320px) {
+@media(max-width: 1300px) {
     .encabezado {
         height: 300px;
     }
