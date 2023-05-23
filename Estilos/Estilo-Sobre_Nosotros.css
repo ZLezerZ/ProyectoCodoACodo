@@ -32,7 +32,7 @@
 }
 
 .contenedor--p p {
-    width: 700px;
+    width: 600px;
     padding: 20px 20px 0px 20px;
     text-align: justify;
     font-family: 'Noto Sans', sans-serif;
@@ -44,7 +44,7 @@
 
 .encabezado__div--img {
     position: relative;
-    right: 0;
+    right: 15px;
     display: flex;
     align-items: center;
     width: 50vw;
@@ -98,8 +98,9 @@ summary:hover {
 }
 
 summary span {
-    padding: 0px 5px 0px 0px;
+    margin-right: 5px
 }
+
 
 details {
     display: flex;
@@ -233,6 +234,7 @@ details {
     .menu {
         margin: 10vw 0px 10vw;
     }
+
     details,
     summary {
         width: 98vw;
@@ -250,7 +252,8 @@ details {
     .contenedor--p p {
         width: auto;
     }
-/*Cartas*/
+
+    /*Cartas*/
     .card {
         margin: 10px 5px 0px 0px;
         height: 10vh;
@@ -274,7 +277,8 @@ details {
         font-size: 1em;
     }
 }
-@media(max-width: 1320px) {
+
+@media(max-width: 1300px) {
     .encabezado {
         height: 300px;
     }
