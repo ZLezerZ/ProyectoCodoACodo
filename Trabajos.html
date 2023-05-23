@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/8c83a113b4.js" crossorigin="anonymous"></script>
+    <script src="JavaScript/Nav.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="icon" type="icon" href="Imagenes/favicomatic/favicon-32x32.png">
     <title>El Sauce Boxeador</title>
 </head>
@@ -58,7 +60,8 @@
         <div class="contenedor--p">
             <div>
                 <h1>Nuestros Trabajos</h1>
-                <p>Explorá nuestra amplia gama de muebles y descubrí el resultado de nuestro enfoque en el diseño a medida.</p>
+                <p>Explorá nuestra amplia gama de muebles y descubrí el resultado de nuestro enfoque en el diseño a
+                    medida.</p>
             </div>
         </div>
         <div class="encabezado__div--img">
@@ -66,6 +69,7 @@
         </div>
 
     </section>
+
     <!-- inicio menu y opciones -->
     <section class="menu">
 
@@ -156,8 +160,19 @@
             </div>
 
         </details>
-    </section> <!--fin -->
-
+    </section>
+    <!--Consumo de API-->
+    <div class="contenedor__boton">
+        <button class="margin--boton" id="boton-tipo-cambio">Consultar por tipo de cambio</button>
+    </div>
+    <div class="contenedor__tipo-cambio" id="contenedor__tipo-cambio">
+        <span>
+            <h3>Todos nuestros productos se pueden abonar en moneda extranjera</h3>
+            <p id="tipo-cambio-usd"></p>
+            <p id="tipo-cambio-eur"></p>
+        </span>
+    </div>
+    <!--fin -->
     <footer>
         <div class="footer__redes">
             <ul>
@@ -196,8 +211,7 @@
             </ul>
         </div>
     </footer>
-
-    <script src="JavaScript\Nav.js"></script>
+    <script src="JavaScript/API.js"></script>
 </body>
 
 </html>
