@@ -186,7 +186,7 @@ transform: scale(1.02, 1.02);
     padding: 10px;
 }
 
-.contenedor__tipo-cambio h3, p {
+.contenedor__tipo-cambio h3, .contenedor__tipo-cambio p {
     font-size: 1em;
     color: #4e5283;
 }
