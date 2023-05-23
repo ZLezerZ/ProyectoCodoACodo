@@ -1,41 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/Estilo-header.css">
-    <link rel="stylesheet" href="Estilos/Estilo-seccion.css">
-    <link rel="stylesheet" href="../Carpintería - El Sauce Boxeador/Estilos/Normalize.css">
+    <link rel="stylesheet" href="Estilos/Estilo_contacto.css">
+    <link rel="stylesheet" href="Estilos/Footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="icon" type="icon" href="Imagenes/favicomatic/favicon-32x32.png">
-    <title>El Sauce Boxeador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/8c83a113b4.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="Imagenes/favicomatic/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\Lourdes\OneDrive\Documentos\Codo a codo\TPO prueba\Imágenes\favicomatic\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Imagenes/favicomatic/favicon-16x16.png">
+    <title>Contacto</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo__movil"><a href="index.html"><img src="Imagenes/Imagen12.png"alt="Logo de Empresa"></a><p>El Sauce Boxeador</p><p>un gancho de calidad en cada mueble</p></div>
-            <ul class="lista--menu">
-                <li class="lista__item"><a href="index.html">Inicio</a></li>
-                <li class="lista__item"><a href="Sobre_Nosotros.html">Sobre Nosotros</a></li>
-                <li class="lista__item__logo"><a href="index.html"><img class="animate__animated" src="Imagenes/Imagen13.png"alt="Logo de Empresa"></a> <p class="lista__item__logo__p animate__animated">El Sauce Boxeador</p></li>
-                <li class="lista__item"><a href="Trabajos.html">Trabajos</a></li>
-                <li class="lista__item"><a href="Contacto.html">Contacto</a></li>
-            </ul>
-            <span class="boton__menu">
-                <i class="material-symbols-outlined">Menu</i>
-            </span>
-        </nav>
+    <div class="contenedor" id="contenedor"> 
+        <header class="header" id="header">
+            <nav>
+                <div class="logo__movil">
+                    <a href="index.html"><img src="Imagenes/Imagen12.png" alt="Logo de Empresa"></a>
+                    <div class="logo__movil__span">
+                        <span class="logo__movil__span--nombre">
+                            <p>El Sauce Boxeador</p>
+                        </span>
+                        <span class="logo__movil__span--slogan">
+                            <p>un gancho de calidad en cada mueble</p>
+                        </span>
+                    </div>
+                </div>
+                <ul class="lista--menu" id="lista--menu">
+                    <li class="lista__item"><a href="index.html">Inicio</a></li>
+                    <li class="lista__item"><a href="Sobre_Nosotros.html">Sobre Nosotros</a></li>
+                    <li class="lista__item__logo"><a href="index.html"><img class="animate__animated" src="Imagenes/Imagen13.png" alt="Logo de Empresa"></a>
+                        <p class="lista__item__logo__p animate__animated">El Sauce Boxeador</p>
+                    </li>
+                    <li class="lista__item"><a href="Trabajos.html">Trabajos</a></li>
+                    <li class="lista__item"><a href="Contacto.html">Contacto</a></li>
+                    <button class="boton__menu-cerrar" id="cerrar">
+                        <i class="material-symbols-outlined">close</i>
+                    </button>
+                </ul>
+                <button class="boton__menu" id="abrir">
+                    <i class="material-symbols-outlined">Menu</i>
+                </button>
+            </nav>
+        </header>  
+        <section class="contenedor__formulario" id="contenedor__formulario">
+            <form action="" class="formulario" id="formulario">
+                <h2 class="form__title">Contactanos</h2>
 
-    </header>
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Coloque su nombre y apellido.</p>
+                </div>
 
-    <h2>Esta es la página de Contacto</h2>
+                <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Email</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__consulta">
+                        <label for="consulta" class="formulario__label">Consulta</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="consulta" id="consulta">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Escriba su consulta</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo_enviar">
+                    <div class="grupo__enviar">
+                        
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <div class="formulario__mensaje-error" id="formulario__mensaje-error"><p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellene el formulario correctamente. </div>
+                            <div class="formulario__mensaje-exito" id="formulario__mensaje-exito"><p><b>Gracias por su consulta</b>, en breve será contactado por la empresa</p></div> 
+                        </div>
+                        <div class="formulario__grupo-btn-enviar">
+                            <button type="submit" class="formulario__btn"><p>Enviar</p></button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+        <aside class="costado">
+                <div class="iconos">
+                    <div class="telefono"><i class="fa-solid fa-phone"></i>011 1234-5678 / 011 1234-1234</div>
+                    <div class="horario"><i class="fa-solid fa-clock"></i>Lu a Vie de 08 a 17.30 hs | Sáb de 8.30 a 13hs</div>
+                    <div class="direccion"><i class="fa-sharp fa-solid fa-location-dot"></i>Av. Rivadavia 459, CABA</div>
+                </div>
+
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.9624501862492!2d-58.37364493043541!3d-34.607959394503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad322ee116d%3A0x621b972c2dbe11b2!2sAv.%20Rivadavia%20459%2C%20C1002%20AAC%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1684433240105!5m2!1ses!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </aside>
+        <footer class="footer">
+            <div class="footer__redes">
+                <ul>
+                    <span class="footer__relleno-redes"></span>
+                        <li>
+                            <a href="https://instagram.com/carpinteria_el_sauce_boxeador?igshid=ZGUzMzM3NWJiOQ==" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/ElSauceBox" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:carpinteriaElSauceBoxeador@gmail.com?subject=Solicitud de Información"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+                        </li>
+                    <span class="footer__relleno-redes"></span>
+                </ul>
+                <p>Póngase en contacto con nosotros vía Instagram, twiter o a través de nuestro correo electrónico</p>
+            </div>
+            <div class="footer__logo">
+                <span>
+                    <a href="index.html"><img src="Imagenes/Imagen13.png" alt="logo de empresa"></a>
+                    <p>El Sauce Boxeador</p>
+                </span>
+                        
+            </div>
+            <div class="footer__copyright">
+                <p>Copyright © 2023 El Sauce Boxeador, S.A. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer__informacion-legal">
+                <ul>
+                    <li><a href="#">Información legal</a></li>
+                    <span><b>|</b></span>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <footer>
+        </div>
+        
+    <script src="JavaScript/Nav.js"></script> 
+    <script src="JavaScript/Contacto.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 </body>
-
 </html>

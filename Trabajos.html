@@ -6,35 +6,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/Estilo-header.css">
-    <link rel="stylesheet" href="Estilos/Estilo-seccion.css">
-    <link rel="stylesheet" href="../Carpintería - El Sauce Boxeador/Estilos/Normalize.css">
+    <link rel="stylesheet" href="Estilos/EstiloTrabajos.css">
+    <link rel="stylesheet" href="Estilos/Footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/8c83a113b4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="icon" type="icon" href="Imagenes/favicomatic/favicon-32x32.png">
     <title>El Sauce Boxeador</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
-            <div class="logo__movil"><a href="index.html"><img src="Imagenes/Imagen12.png"alt="Logo de Empresa"></a><p>El Sauce Boxeador</p><p>un gancho de calidad en cada mueble</p></div>
-            <ul class="lista--menu">
+            <div class="logo__movil">
+                <a href="index.html"><img src="Imagenes/Imagen12.png" alt="Logo de Empresa"></a>
+                <div class="logo__movil__span">
+                    <span class="logo__movil__span--nombre">
+                        <p>El Sauce Boxeador</p>
+                    </span>
+                    <span class="logo__movil__span--slogan">
+                        <p>un gancho de calidad en cada mueble</p>
+                    </span>
+                </div>
+            </div>
+            <ul class="lista--menu" id="lista--menu">
                 <li class="lista__item"><a href="index.html">Inicio</a></li>
                 <li class="lista__item"><a href="Sobre_Nosotros.html">Sobre Nosotros</a></li>
-                <li class="lista__item__logo"><a href="index.html"><img class="animate__animated" src="Imagenes/Imagen13.png"alt="Logo de Empresa"></a> <p class="lista__item__logo__p animate__animated">El Sauce Boxeador</p></li>
+                <li class="lista__item__logo"><a href="index.html"><img class="animate__animated"
+                            src="Imagenes/Imagen13.png" alt="Logo de Empresa"></a>
+                    <p class="lista__item__logo__p animate__animated">El Sauce Boxeador</p>
+                </li>
                 <li class="lista__item"><a href="Trabajos.html">Trabajos</a></li>
                 <li class="lista__item"><a href="Contacto.html">Contacto</a></li>
+                <button class="boton__menu-cerrar" id="cerrar">
+                    <i class="material-symbols-outlined">close</i>
+                </button>
             </ul>
-            <span class="boton__menu">
+            <button class="boton__menu" id="abrir">
                 <i class="material-symbols-outlined">Menu</i>
-            </span>
+            </button>
         </nav>
-
     </header>
-    <h2>Esta es la página de Trabajos</h2>
+    <!-- inicio  -->
+    <section class="encabezado">
+
+        <div class="contenedor--p">
+            <div>
+                <h1>Nuestros Trabajos</h1>
+                <p>Explorá nuestra amplia gama de muebles y descubrí el resultado de nuestro enfoque en el diseño a
+                    medida.</p>
+            </div>
+        </div>
+        <div class="encabezado__div--img">
+            <img src="Imagenes/Trabajos/nuestroTaller1.png" alt="foto de portada - nuestro taller">
+        </div>
+
+    </section>
+
+    <!-- inicio menu y opciones -->
+    <section class="menu">
+
+        <details>
+            <summary>
+                <span class="material-symbols-outlined">
+                    bedroom_parent
+                </span>
+                Habitaciones
+            </summary>
+            <div class="menu__fondo">
+                <div class="grid-container">
+                    <img src="Imagenes/Trabajos/habitacion1.jpeg">
+                    <img src="Imagenes/Trabajos/habitacion2.jpeg">
+                    <img src="Imagenes/Trabajos/habitacion3.jpeg">
+                    <img src="Imagenes/Trabajos/habitacion4.jpeg">
+                    <img src="Imagenes/Trabajos/habitacion5.jpeg">
+                    <img src="Imagenes/Trabajos/habitacion6.jpeg">
+                </div>
+            </div>
+        </details>
+
+        <details>
+            <summary>
+                <span class="material-symbols-outlined">
+                    countertops
+                </span>
+                Cocinas
+            </summary>
+            <div class="menu__fondo">
+                <div class="grid-container">
+                    <img src="Imagenes/Trabajos/Cocina1.jpg">
+                    <img src="Imagenes/Trabajos/Cocina2.jpg">
+                    <img src="Imagenes/Trabajos/Cocina3.jpg">
+                    <img src="Imagenes/Trabajos/Cocina4.jpg">
+                    <img src="Imagenes/Trabajos/Cocina5.jpg">
+                    <img src="Imagenes/Trabajos/Cocina6.jpg">
+                </div>
+            </div>
+        </details>
+
+        <details>
+            <summary>
+                <span class="material-symbols-outlined">
+                    desk
+                </span>
+                Escritorios
+            </summary>
+            <div class="menu__fondo">
+                <div class="grid-container">
+                    <img src="Imagenes/Trabajos/escritorio1.jpg">
+                    <img src="Imagenes/Trabajos/escritorio2.jpg">
+                    <img src="Imagenes/Trabajos/escritorio3.jpg">
+                    <img src="Imagenes/Trabajos/escritorio4.jpg">
+                    <img src="Imagenes/Trabajos/escritorio5.jpg">
+                    <img src="Imagenes/Trabajos/escritorio6.jpg">
+                </div>
+            </div>
+        </details>
+
+        <details>
+            <summary>
+                <span class="material-symbols-outlined">
+                    hotel_class
+                </span>
+                Pedidos especiales
+            </summary>
+            <div class="menu__fondo">
+                <div class="grid-container">
+                    <img src="Imagenes/Trabajos/Especiales1.jpg">
+                    <img src="Imagenes/Trabajos/especiales2.jpg">
+                    <img src="Imagenes/Trabajos/especiales3.jpg">
+                    <img src="Imagenes/Trabajos/especiales4.jpg">
+                    <img src="Imagenes/Trabajos/especiales5.jpg">
+                    <img src="Imagenes/Trabajos/especiales6.jpg">
+                </div>
+            </div>
+
+        </details>
+    </section>
+    <!--Consumo de API-->
+    <div class="contenedor__boton">
+        <button class="margin--boton" id="boton-tipo-cambio">Consultar por tipo de cambio</button>
+    </div>
+    <div class="contenedor__tipo-cambio" id="contenedor__tipo-cambio">
+        <span>
+            <h3>Todos nuestros productos se pueden abonar en moneda extranjera</h3>
+            <p id="tipo-cambio-usd"></p>
+            <p id="tipo-cambio-eur"></p>
+        </span>
+    </div>
+    <!--fin -->
+    <footer>
+        <div class="footer__redes">
+            <ul>
+                <span class="footer__relleno-redes"></span>
+                <li>
+                    <a href="https://instagram.com/carpinteria_el_sauce_boxeador?igshid=ZGUzMzM3NWJiOQ=="
+                        target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/ElSauceBox" target="_blank"><i
+                            class="fa-brands fa-twitter fa-2xl"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:carpinteriaElSauceBoxeador@gmail.com?subject=Solicitud de Información"><i
+                            class="fa-solid fa-envelope fa-2xl"></i></a>
+                </li>
+                <span class="footer__relleno-redes"></span>
+            </ul>
+            <p>Pongase en contacto con nosotros vía Instagram, twiter o a través de nuestro correo electrónico</p>
+        </div>
+        <div class="footer__logo">
+            <span>
+                <a href="index.html"><img src="Imagenes/Imagen13.png" alt="logo de empresa"></a>
+                <p>El Sauce Boxeador</p>
+            </span>
+
+        </div>
+        <div class="footer__copyright">
+            <p>Copyright © 2023 El Sauce Boxeador, S.A. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer__informacion-legal">
+            <ul>
+                <li><a href="#">Información legal</a></li>
+                <span><b>|</b></span>
+                <li><a href="#">Política de privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="JavaScript/API.js"></script>
+    <script src="JavaScript/Nav.js"></script>
 </body>
 
 </html>
