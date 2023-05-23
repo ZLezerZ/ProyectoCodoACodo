@@ -97,6 +97,7 @@ footer li {
     color: #fff;
     font-style: italic;
     font-size: .6em;
+    text-align: center;
 }
 
 .footer__copyright {
@@ -129,4 +130,16 @@ footer li {
 
 .footer__informacion-legal span {
     color: #AA9FB1;
+}
+
+@media (max-width: 576px){
+    .footer__informacion-legal li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0px;
+    }
+    .footer__informacion-legal span{
+        display: none;
+    }
 }

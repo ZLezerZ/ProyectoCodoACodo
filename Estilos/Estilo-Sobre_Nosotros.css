@@ -151,13 +151,14 @@ details {
     justify-content: center;
     align-items: center;
     width: 290px;
-    height: 340px;
+    height: 360px;
     margin: 20px;
     background-color: #baa4df;
     border-radius: 20px;
 }
 
 .card .face {
+    display: flex;
     position: relative;
     width: 90%;
     height: 90%;
@@ -192,10 +193,10 @@ details {
 }
 
 .card .back {
+    display: flex;
     position: absolute;
     width: 90%;
     height: 90%;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
@@ -227,7 +228,7 @@ details {
 
 /*Aquí termina el estilo de Nuestro-Staff*/
 
-@media (max-width: 767px) {
+@media (max-width:1134px) {
 
     .menu {
         margin: 10vw 0px 10vw;
@@ -249,21 +250,20 @@ details {
     .contenedor--p p {
         width: auto;
     }
-
+/*Cartas*/
     .card {
         margin: 10px 5px 0px 0px;
-        height: 25vw;
+        height: 10vh;
         background-color: transparent;
         transition: all 1s;
     }
 
     .card:hover {
-        height: auto;
-        flex-grow: 1;
+        height: 350px;
     }
 
     .card .face {
-        transition: 1s;
+        transition: 2s;
     }
 
     .card .front h3 {
@@ -274,7 +274,6 @@ details {
         font-size: 1em;
     }
 }
-
 @media(max-width: 1320px) {
     .encabezado {
         height: 300px;
