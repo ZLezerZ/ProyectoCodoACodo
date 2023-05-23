@@ -8,7 +8,7 @@
 .carrousel {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,20 +58,21 @@
   padding: 1%;
   margin: 1%;
   color: transparent;
-  background-color: #d2bea98c;
+  background-color: #d2bea9;
   transition: all 0.4s ease;
   border-radius: 100%;
-  box-shadow: 0 5px 20px 1px rgba(0 0 0/ 60%);
+  box-shadow: 0 5px 10px 1px rgba(0 0 0/ 60%);
 }
 
 .punto.activo {
-  background-color: #9e5a1246;
+  background-color: #7871aa;
 }
 
 h3{
   color: #4E5283;
   text-align: center;
   margin-top: 2%;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .contenedor__opiniones{
@@ -93,8 +94,9 @@ h3{
   color: #4e5283af;
 }
 
-p{
+.op p{
   text-align: center;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 i{
