@@ -229,6 +229,11 @@ details {
 
 /*Aquí termina el estilo de Nuestro-Staff*/
 
+@media (max-width: 767px) {
+    .contenedor--p p {
+        width: auto;
+    }
+}
 @media (max-width:1134px) {
 
     .menu {
