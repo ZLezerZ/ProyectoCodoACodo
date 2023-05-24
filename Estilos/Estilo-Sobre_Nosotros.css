@@ -245,10 +245,6 @@ details {
         display: none;
     }
 
-    .contenedor--p p {
-        width: auto;
-    }
-
     /*Cartas*/
     .card {
         margin: 10px 5px 0px 0px;
