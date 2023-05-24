@@ -241,10 +241,6 @@ details {
         justify-content: center;
     }
 
-    .encabezado {
-        height: 200px;
-    }
-
     .encabezado__div--img {
         display: none;
     }
