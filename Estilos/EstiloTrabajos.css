@@ -217,7 +217,7 @@ transform: scale(1.02, 1.02);
 @media (max-width: 767px) {
 
     .encabezado {
-        height: 200px;
+        height: 300px;
     }
 
     .encabezado__div--img {
@@ -234,6 +234,9 @@ transform: scale(1.02, 1.02);
 }
 
 @media screen and (max-width: 480px) {
+    .encabezado {
+        height: 200px;
+    }
     .menu {
         margin: 10vw 0px 10vw;
     }
